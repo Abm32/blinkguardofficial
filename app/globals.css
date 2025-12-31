@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --background: #050505;
+}
+
+body {
+  color: white;
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  
+  .gradient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
