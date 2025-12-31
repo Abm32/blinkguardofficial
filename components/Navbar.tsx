@@ -34,7 +34,7 @@ export default function Navbar() {
               Features
             </Link>
             <Link 
-              href="https://github.com" 
+              href="https://github.com/Abm32/BlinkGuard" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors"

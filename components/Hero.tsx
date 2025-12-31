@@ -71,7 +71,7 @@ export default function Hero() {
             <span>Download POC</span>
           </Link>
           <Link
-            href="https://github.com"
+            href="https://github.com/Abm32/BlinkGuard"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-lg hover:bg-white/10 transition-colors flex items-center space-x-2"

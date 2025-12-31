@@ -18,7 +18,7 @@ export default function Footer() {
               <Twitter className="w-5 h-5" />
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/Abm32/BlinkGuard"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors"
