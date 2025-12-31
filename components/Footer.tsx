@@ -26,9 +26,17 @@ export default function Footer() {
               <Github className="w-5 h-5" />
             </Link>
           </div>
-          <p className="text-gray-400 text-sm">
-            Built by the BlinkGuard Team
-          </p>
+          <div className="flex flex-col items-center md:items-end space-y-2">
+            <p className="text-gray-400 text-sm">
+              Built by the BlinkGuard Team
+            </p>
+            <Link
+              href="/privacy"
+              className="text-gray-400 hover:text-white transition-colors text-sm"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
