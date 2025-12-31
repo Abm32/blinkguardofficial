@@ -2,7 +2,14 @@
 const nextConfig = {
   images: {
     domains: [],
+    formats: ['image/avif', 'image/webp'],
   },
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
+  swcMinify: true,
+  // Optimize for Vercel
+  output: 'standalone',
 }
 
 module.exports = nextConfig

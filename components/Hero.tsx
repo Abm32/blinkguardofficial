@@ -3,8 +3,30 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Download, Github } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return (
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+            Don't Blink.{' '}
+            <span className="bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
+              Verify.
+            </span>
+          </h1>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Gradient Blobs */}

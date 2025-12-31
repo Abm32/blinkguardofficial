@@ -66,3 +66,21 @@ npm run build
 npm start
 ```
 
+## Deploy to Vercel
+
+This project is optimized for Vercel deployment. See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) for detailed instructions.
+
+**Quick Deploy:**
+1. Push your code to GitHub
+2. Import the repository in [Vercel](https://vercel.com)
+3. Deploy! (Vercel auto-detects Next.js settings)
+
+## Vercel Optimizations
+
+- ✅ Complete SEO metadata (Open Graph, Twitter Cards)
+- ✅ Auto-generated sitemap.xml and robots.txt
+- ✅ Optimized font loading
+- ✅ Static page generation
+- ✅ Error boundaries and loading states
+- ✅ Hydration-safe animations
+
