@@ -1,7 +1,7 @@
 'use client'
 
-import { Shield } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navbar() {
   return (
@@ -10,8 +10,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <Shield className="w-6 h-6 text-solana-green group-hover:text-solana-purple transition-colors" />
+            <div className="relative w-8 h-8 flex-shrink-0">
+              <Image
+                src="/icon.png"
+                alt="BlinkGuard Logo"
+                width={32}
+                height={32}
+                className="object-contain transition-transform group-hover:scale-110"
+                priority
+              />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-solana-purple to-solana-green bg-clip-text text-transparent">
               BlinkGuard
