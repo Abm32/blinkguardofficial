@@ -51,7 +51,9 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <Link
-            href="#install"
+            href="https://chromewebstore.google.com/detail/bfdpibejhkfociohbnldkkmbbjbhgabj?utm_source=item-share-cb"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-gradient-solana text-black font-bold rounded-lg hover:opacity-90 transition-opacity"
           >
             Install Extension
